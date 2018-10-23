@@ -34,13 +34,13 @@ gem install bundler
 
 Toda gem que eu precisar, antes de sair instalando de alegre, de uma olhada em no rubygems, que é o lugar onde as bibliotecas ficam disponíveis e isso é importante pra decidirmos qual versão vamos trabalhar. Quando procurarmos a gem que estamos querendo trabalhar, vai aparecer as versões, a forma de como ela deve ficar no Gemfile ou então a forma manual de instalação. Com isso devemos copiar e colar para que eu tenha o controle total das versões que estou trabalhando. Nós temos uma péssima mania de qualquer versão nova que sai, já saímos atualizando sem saber porque estamos instalando.
 
-Essas são as gems necessárias para a execução dos cenarios.
-
 Cucumber será a base da nossa automação, utilizando Gherkin para escrita.
 
 Capybara será o framework de desenvolvimento.
 
 Selenium Webdriver será o Driver base e abrir o Firefox para automação.
+
+As gems necessárias para a execução dos cenarios estão no arquivo Gemfile
 
 Quando temos o Gemfile, podemos usar o bundler para instalar todas as gems e suas dependências, usando o seguinte comando:
 
@@ -52,11 +52,15 @@ Com as gems já instaladas, agora sim estamos prontos para ver o projeto funcion
 Foi criado dois testes conforme foi pedido para uma apresentação da automação, esses cenarios foram de "Login" e de "Cadastro".
 
 Apos as conifugurações estarem ok`s, vamos rodar nossos testes, vá no terminal e digita o seguinte comando:
+
 ~> cucumber 
  
 Caso queira ver os cenarios separadamente, doi criado tags para a inicializão dos cenarios.
+
 Para rodar o cenario de login digite o seguinte comando.
+
 ~> cucumber --tag @login 
 
 E para rodar o cenario de cadastro segue o seguinte comando:
+
 ~> cucumber --tag @register

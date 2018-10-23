@@ -11,8 +11,8 @@ module Pages
     LoginPage.new
   end
 
-  def register_page
-    RegisterPage.new
+  def logout_page
+    LogoutPage.new
   end
 
 end

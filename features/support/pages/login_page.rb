@@ -1,15 +1,18 @@
 # encoding:utf-8
 
-# home_page
-class LoginPage < SitePrism::Page
-    set_url 'https://dashboard.stripe.com/login'
+  class LoginPage
+    include Capybara::DSL
   
-       section :login, SignIn::Login, '.email-password-step'
-    
+    def load
+      visit 'https://dashboard.stripe.com/login'
+    end
+  
     def do_login(u)
-      login.mail.set(u[:username])
-      login.pass.set(u[:password])
-      login.sign_in.click
+      within('.login') do
+        fill_in 'email', with: u[:email]
+        fill_in 'password', with: u[:password]
+        click_button 'Sign in to your account'
+        sleep(5)
+      end
     end
   end
-  

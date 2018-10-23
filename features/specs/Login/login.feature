@@ -9,8 +9,10 @@ Funcionalidade: Login
     Cenário: Acesso com sucesso
         Dado que sou um usuario cadastrado
         Quando faço login
-        Então vejo dashboard da minha conta
-            E vejo os serviços disponiveis 
+        Então vejo dashboard da minha conta:
+        """
+        Get started with Stripe
+        """
 
 
 

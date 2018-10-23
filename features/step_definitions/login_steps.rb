@@ -12,20 +12,8 @@ Quando("faço login") do
   login_page.do_login(@user)
 end
 
-Então("vejo dashboard da minha conta") do
-  pending # Write code here that turns the phrase above into concrete actions
+Então("vejo dashboard da minha conta:") do |text|
+  text.split("|").each do |field|
+		expect(page).to have_content field.strip
+	end
 end
-
-Então("vejo os serviços disponiveis") do
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-# Então(/^vejo dashboard da minha conta$/) do
-#   home_page.header.wait_for_region
-#   expect(home_page.header.region.text).to have_content @region
-# end
-
-# Dado(/^vejo meu saldo em pontos dotz$/) do
-#   dashboard_page.close_modal.click
-#   expect(dashboard_page.header.get_balance).to be > 0
-# end

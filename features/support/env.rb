@@ -15,7 +15,7 @@ World(Pages)
 Capybara.register_driver :selenium do |app|
   Capybara::Selenium::Driver.new(
     app,
-    :browser => :firefox
+    :browser => :chrome
   )
 end
 
