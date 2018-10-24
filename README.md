@@ -18,4 +18,19 @@ O código ta liberado para consulta, fork, clone, etc =).
 
 Qualquer dúvida, mandem email para borelqa@gmail.com.
 
+# Koda 09
+
+Confesso que foi um dos testes mais dificeis que já fiz e tambem confesso que fiz muitas buscas para resolver esse problema.
+
+Para rodar os testes é so entrar na pasta /app no terminal e digitar:
+
+~> ruby tests.rb
+
+Não sei se era este o objetivo do teste, mas foi o modo que eu entendi.
+
+Agradeço pela oportunidade.
+
 Um abraço.
+
+
+Vinicios Borel!
