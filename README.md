@@ -4,7 +4,7 @@ Bom, eu vou descorrer o assunto de uma forma bem simples.
 
 Antes de mais nada vamos a configuração do ambiente:
 
-1. [Intalação Ruby e RVM](https://github.com/BorelQA/Teste_Koda_Automation/blob/master/Capybara.md);
+1. [Intalação Ruby e RVM](https://github.com/BorelQA/Teste_Koda_Automation/blob/master/Ruby.md);
 2. [Configurações](https://github.com/BorelQA/Teste_Koda_Automation/blob/master/Configuracoes.md);
 
 Obs: Todos o cenarios ficam dependente do recaptcha funcioanr ou não no momento don teste, infeslizmente hoje não existe uma biblioteca que possa nós ajudar a quebrar ele.
