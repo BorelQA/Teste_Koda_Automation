@@ -8,8 +8,11 @@ Antes de mais nada vamos a configuração do ambiente:
 2. [Configurações](https://github.com/BorelQA/Teste_Koda_Automation/blob/master/Configuracoes.md);
 
 Obs: Todos o cenarios ficam dependente do recaptcha funcionar ou não no momento do teste, infeslizmente hoje não existe uma biblioteca que possa nós ajudar a quebrar ele.
-    E bem possivel de acontecer dos testes quebrarem por causa do recapctcha, caso isso aconteça rode o cenario novamente até que ele consiga concluir seus passos
+    E bem possivel de acontecer dos testes quebrarem por causa do recapctcha, caso isso aconteça rode o cenario novamente até que ele consiga concluir seus passos.
+ 
+```ruby
     Ao meu ver quando temos recaptcha em um ambiente de stage ou produção, isso é retirado do ambiente de QA caso exista caso não exista irei solicitar um rsrsrs.
+```
 
 Before: Esta sendo usado somente para a inicilização da Home Page.
 
