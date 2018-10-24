@@ -24,7 +24,9 @@ Confesso que foi um dos testes mais dificeis que já fiz e tambem confesso que f
 
 Para rodar os testes é so entrar na pasta /app no terminal e digitar:
 
-~> ruby tests.rb
+```ruby
+ruby tests.rb
+```
 
 Não sei se era este o objetivo do teste, mas foi o modo que eu entendi.
 

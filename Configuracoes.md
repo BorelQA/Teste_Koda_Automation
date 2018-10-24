@@ -53,14 +53,20 @@ Foi criado dois testes conforme foi pedido para uma apresentação da automaçã
 
 Apos as conifugurações estarem ok`s, vamos rodar nossos testes, vá no terminal e digita o seguinte comando:
 
-~> cucumber 
- 
+```ruby
+cucumber 
+``` 
+
 Caso queira ver os cenarios separadamente, doi criado tags para a inicializão dos cenarios.
 
 Para rodar o cenario de login digite o seguinte comando.
 
-~> cucumber --tag @login 
+```ruby
+cucumber --tag @login 
+```
 
 E para rodar o cenario de cadastro segue o seguinte comando:
 
-~> cucumber --tag @register
+```ruby
+cucumber --tag @register
+```
