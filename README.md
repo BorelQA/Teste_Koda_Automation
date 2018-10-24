@@ -7,6 +7,13 @@ Antes de mais nada vamos a configuração do ambiente:
 1. [Intalação Ruby e RVM](https://github.com/BorelQA/Teste_Koda_Automation/blob/master/Capybara.md);
 2. [Configurações](https://github.com/BorelQA/Teste_Koda_Automation/blob/master/Configuracoes.md);
 
+Obs: Todos o cenarios ficam dependente do recaptcha funcioanr ou não no momento don teste, infeslizmente hoje não existe uma biblioteca que possa nós ajudar a quebrar ele.
+    E bem possivel de acontecer dos testes quebrarem por causa do recapctcha, caso isso aconteça rode o cenario novamente até que ele consiga concluir seus passos
+
+Before: Esta sendo usado somente para a inicilização da Home Page.
+
+After: Esta sendo usado para fazer a restauração da senha após o cenario de "charge_password", caso não executar o teste de troca de senha, comentar o After no hooks.rb que está na pasta features/support/hooks.rb!
+
 O código ta liberado para consulta, fork, clone, etc =). 
 
 Qualquer dúvida, mandem email para borelqa@gmail.com.

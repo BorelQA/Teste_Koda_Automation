@@ -4,4 +4,8 @@
 class HomePage < SitePrism::Page
   set_url '/'
 
+  def home
+    visit 'https://dashboard.stripe.com/'
+  end
+
 end

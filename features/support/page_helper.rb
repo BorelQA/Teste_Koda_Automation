@@ -1,7 +1,5 @@
 # encoding:utf-8
 
-require_relative 'pages/sections'
-
 module Pages
   def home_page
     HomePage.new
@@ -15,4 +13,7 @@ module Pages
     LogoutPage.new
   end
 
+  def password_page
+    PasswordPage.new
+  end
 end

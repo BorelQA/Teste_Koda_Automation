@@ -1,9 +1,11 @@
 # encoding:utf-8
 
 Quando("posso acessar o profile e me deslogar") do
-    logout_page.profile.logout
+    logout_page.logout
 end
-  
-  Então("o site novamente") do
-    pending # Write code here that turns the phrase above into concrete actions
+
+Então("vejo a tela de login novamente:") do |text|
+  text.split("|").each do |field|
+    expect(page).to have_content field.strip
   end
+end

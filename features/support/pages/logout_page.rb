@@ -1,12 +1,13 @@
 # encoding:utf-8
 
-class LogoutPage <SitePrism::Page
+class LogoutPage < SitePrism::Page
 
-    section :profile, Logout::Profile, '.site-header'
+    element :menu, '.db-UserMenu'
+    element :signout,  '.ButtonLink'
 
     def logout
-        self.profile.click
-        self.signout.click
+        menu.click
+        click_button 'Sign out'
     end
 end
 

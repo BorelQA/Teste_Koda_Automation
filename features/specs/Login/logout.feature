@@ -12,4 +12,7 @@ Funcionalidade: Logout
 
     Cenario: Deslogar com sucesso
         * posso acessar o profile e me deslogar
-        Então o site novamente
+        Então vejo a tela de login novamente:
+        """
+        Welcome back!
+        """
